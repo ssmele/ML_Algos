@@ -1,3 +1,8 @@
+"""
+*********** I DID NOT WRITE THIS CLASS. Was given to class memebers to use as starting point for ID3 algorithm. ***************
+*********** Credit goes to Vivek Srikumar. ***********
+"""
+
 import copy
 import numpy as np
 

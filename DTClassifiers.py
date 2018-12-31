@@ -32,22 +32,10 @@ class Node:
         return "Node: v={}".format(self.v)
 
 
-class Metrics:
-
-    @classmethod
-    def accuracy(cls, y_pred, y_true):
-        """
-        Simple metric to measure the accuracy between two arrays.
-        :param y_pred: Numpy array.
-        :param y_true: Numpy array.
-        :return:
-        """
-        return np.sum(y_pred == y_true)/len(y_pred)
-
-
 class DecisionTreeBinaryClassifier:
     """
-    This class was made assuming the data given is Data object given by professor.
+    Implementation of the ID3 Binary Classifier algorithm. To use this class the data is assumed to be within a Data object. This was
+    a class given by my professor for my Machine Learning course.
     """
 
     def __init__(self, max_depth=np.inf):
@@ -67,7 +55,7 @@ class DecisionTreeBinaryClassifier:
 
     def predict(self, data):
         """
-        Predicts data rows given.
+        Predicts class for data rows given.
 
         :param data: Must be provided Data datatype.
         :return: Value representing the prediction.
