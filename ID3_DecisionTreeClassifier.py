@@ -34,8 +34,7 @@ class Node:
 
 class DecisionTreeBinaryClassifier:
     """
-    Implementation of the ID3 Binary Classifier algorithm. To use this class the data is assumed to be within a Data object. This was
-    a class given by my professor for my Machine Learning course.
+    Implementation of the ID3 Binary Classifier algorithm. To use this class the data is assumed to be within a Data object.
     """
 
     def __init__(self, max_depth=np.inf):
